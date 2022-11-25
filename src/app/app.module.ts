@@ -9,12 +9,16 @@ import {MatCardModule} from '@angular/material/card';
 import { HeaderComponent } from './header/header.component';
 import {MatMenuModule} from '@angular/material/menu';
 import { TodoboardComponent } from './todoboard/todoboard.component';
+import { TodoCardComponent } from './todo-card/todo-card.component';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    TodoboardComponent
+    TodoboardComponent,
+    TodoCardComponent
   ],
   imports: [
     BrowserModule,
@@ -23,6 +27,8 @@ import { TodoboardComponent } from './todoboard/todoboard.component';
     MatToolbarModule,
     MatMenuModule,
     MatCardModule,
+    MatIconModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

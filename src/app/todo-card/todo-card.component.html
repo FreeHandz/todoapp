@@ -1,0 +1,15 @@
+<mat-card class="todo-card">
+    <div class="card-header">
+        <div class="card-title">
+            {{card.title}}
+        </div>
+        <mat-icon [matMenuTriggerFor]="menu">more_horiz</mat-icon>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item>Delete todo</button>
+        </mat-menu>
+    </div>
+    <hr>
+    <div class="card-description">
+        {{card.description}}
+    </div>
+</mat-card>
